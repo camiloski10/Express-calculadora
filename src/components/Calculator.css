@@ -1,0 +1,169 @@
+body{
+    background: url("../assets/img/realllllllllll.png");
+    background-repeat: no-repeat;
+    background-position:100%;
+    background-size: 500px;
+}
+Header{
+    width: 10px;
+    height: 10px;
+}
+button{
+    width: 70px;
+    height: 70px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 24px;
+    margin: 0.3em;
+}
+button:hover{
+    cursor: pointer;
+}
+.wrapper{
+    background-color:black;
+    border-radius: 16px;
+    padding: 1px;
+    max-width:416px;
+    margin-left: 450px;
+    margin-top: 300px;
+}
+.orange{
+    background-color: #FF9500;
+    color: white;
+}
+.gray{
+    background-color: #505050;
+    color: white;
+}
+.result{
+    color: rgb(245, 247, 248);
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+    font-size:50px;
+    text-align: center;
+}
+#logo{
+    background: url("../assets/img/real\ madrid\ \(1\).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+}
+#eliminar{
+    background: url("../assets/img/siuuu.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    color:rgb(252, 249, 249);
+    font-family: fantasy;
+}
+
+#division{
+    background: url("../assets/img/azul\ \(1\).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color:transparent;
+}
+#multiplicacion{
+    background: url("../assets/img/ok.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color:transparent;
+}
+#suma{
+    background: url("../assets/img/ok2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color:transparent;
+}
+#resta{
+    background: url("../assets/img/menos\ \(1\).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color:transparent;
+}
+
+#igual{
+    background: url("../assets/img/igual\ \(1\).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color:transparent;
+}
+#c{
+    background: url("../assets/img/c.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color:transparent;
+}
+
+#uno{
+    background: url("../assets/img/courtois\ \(1\).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color:transparent;
+}
+#dos{
+    background: url("../assets/img/carvaaaaaaaa.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color:transparent;
+}
+#tres{
+    background: url("../assets/img/miliiiiiiiii.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color:transparent;
+}
+#cuatro{
+    background: url("../assets/img/alabaaaaaaaaaa.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color:transparent;
+}
+#cinco{
+    background: url("../assets/img/fedeeeeeeee.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color:transparent;
+}
+#seis{
+    background: url("../assets/img/luccccccccaaaaaaaaaa.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color:transparent;
+}
+#siete{
+    background: url("../assets/img/bichooooooooo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color:transparent;
+}
+#ocho{
+    background: url("../assets/img/antonioooooooo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color:transparent;
+}
+#nueve{
+    background: url("../assets/img/karimmmmmmmm.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color:transparent;
+}
+#cero{
+    background: url("../assets/img/vinigol.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color:transparent;
+}
+#porcen{
+    background: url("../assets/img/porcennnnnnnnn.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color:transparent;
+}
+#coma{
+    background: url("../assets/img/coma\ \(1\).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color:transparent;
+}
