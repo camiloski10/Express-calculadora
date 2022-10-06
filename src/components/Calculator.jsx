@@ -17,7 +17,10 @@ export default function Calculator() {
   }
 
   const limpiar= () => {
-    setNum(num.slice(0,0));
+     setNum("")
+    setOperator("")
+    setOldNum("")
+  
   }
 
   function porcentaje() {
@@ -32,24 +35,21 @@ export default function Calculator() {
     var operatorInput = e.target.value;
     setOperator(operatorInput);
     setOldNum(num);
-    setNum(0);
+    setNum('');
 
   }
 
-  function calcular() {
-    if (operator === "/") {
-      setNum(parseInt(oldnum) / parseInt(num));
-    } else if (operator === "x") {
-      setNum(parseInt(oldnum) * parseInt(num));
-    } else if (operator === "-") {
-        console.log(oldnum)
-        console.log(num)
-        console.log(oldnum-num)
-      setNum(parseInt(oldnum) - parseInt(num));
-    } else if (operator === "+") {
-      setNum(parseInt(oldnum) + parseInt(num));
-    }
-  }
+  const handleCalcular = async (e) => {
+    const objeto =   oldnum + operator + num;
+    console.log(objeto);
+    try{
+      const res = await fetch(`http://localhost:4000/calcular/${objeto}`);
+      const calc = await res.json();
+      console.log(res)
+      setNum(calc.total);
+    }catch(error){console.log(error)}
+  };
+  
   return (
     <div> 
       <Header/>
@@ -59,11 +59,11 @@ export default function Calculator() {
       <button onClick={limpiar} id="eliminar">AC</button>
       <button onClick={backspace} id="c">C</button>
       <button onClick={porcentaje} id="porcen">%</button>
-      <button className="orange" onClick={operadores} value="/" id="division">/</button>
+      <button className="orange" onClick={operadores} value="%2F" id="division">/</button>
       <button className="gray" onClick={inputNum} value={7} id="siete">7</button>
       <button className="gray" onClick={inputNum} value={8} id="ocho">8</button>
       <button className="gray" onClick={inputNum} value={9} id="nueve">9</button>
-      <button className="orange" onClick={operadores} value="x" id="multiplicacion">x</button>
+      <button className="orange" onClick={operadores} value="*" id="multiplicacion">x</button>
       <button className="gray" onClick={inputNum} value={4} id="cuatro">4</button>
       <button className="gray" onClick={inputNum} value={5} id="cinco">5</button>
       <button className="gray" onClick={inputNum} value={6} id="seis">6</button>
@@ -73,9 +73,9 @@ export default function Calculator() {
       <button className="gray" onClick={inputNum} value={3} id="tres">3</button>
       <button className="orange" onClick={operadores} value="+" id="suma">+</button>
       <button className="gray" onClick={inputNum} value={0} id="cero">0</button>
-      <button className="gray" onClick={operadores} value="," id="coma">,</button>
+      <button className="gray" onClick={inputNum} value="," id="coma">,</button>
       <button className="gray" id="logo">,</button>
-      <button onClick={calcular} value="=" id="igual">=</button>
+      <button onClick={handleCalcular} value="=" id="igual">=</button>
       </div>
     </div>
     

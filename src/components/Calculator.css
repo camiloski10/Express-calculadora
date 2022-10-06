@@ -1,12 +1,15 @@
 body{
-    background: url("../assets/img/realllllllllll.png");
-    background-repeat: no-repeat;
+    background: url("../components/real.png");
+    /* background-repeat: no-repeat; */
     background-position:100%;
     background-size: 500px;
 }
-Header{
-    width: 10px;
-    height: 10px;
+header{
+    color:gold;
+    text-align: center;
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 button{
     width: 70px;
@@ -24,9 +27,9 @@ button:hover{
     border-radius: 16px;
     padding: 1px;
     max-width:416px;
-    margin-left: 450px;
+    margin-left: 850px;
     margin-top: 300px;
-}
+}   
 .orange{
     background-color: #FF9500;
     color: white;
@@ -166,4 +169,12 @@ button:hover{
     background-repeat: no-repeat;
     background-position: center;
     color:transparent;
+}
+@media screen and (max-width: 600px) {
+    .wrapper{
+        width: 376px;
+    }
+    body{
+        width:376px;
+    }
 }

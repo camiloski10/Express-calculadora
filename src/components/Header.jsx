@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className='cabecera'>
         <header>
-        <img src={logo} alt="imagen"></img>
+        Real Madrid CF
         </header>
     </div>
   )
